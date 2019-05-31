@@ -1,0 +1,1099 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, /Users/tienpham/Documents/Git/tintech/scss/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, /Users/tienpham/Documents/Git/tintech/scss/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, /Users/tienpham/Documents/Git/tintech/scss/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, /Users/tienpham/Documents/Git/tintech/scss/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, /Users/tienpham/Documents/Git/tintech/scss/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 40, /Users/tienpham/Documents/Git/tintech/scss/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, /Users/tienpham/Documents/Git/tintech/scss/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  Name: TINTECH Company
+  Date: May 2019
+  description: >-
+  A cool website of a cool company.
+  Version: 1.0
+  Author: tien pham
+  Autor URI: https://tienpham.me
+*/
+/* Body */
+/* line 14, /Users/tienpham/Documents/Git/tintech/scss/_base.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 17, /Users/tienpham/Documents/Git/tintech/scss/_base.scss */
+body {
+  color: #565656;
+  font-size: 1.4em;
+  /* currently ems cause chrome bug misinterpreting rems on body element */
+  font-family: "Roboto", Helvetica, sans-serif;
+  line-height: 1.25;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/* line 27, /Users/tienpham/Documents/Git/tintech/scss/_base.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* Headings */
+/* line 30, /Users/tienpham/Documents/Git/tintech/scss/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Slab", Helvetica, sans-serif;
+}
+
+/* line 33, /Users/tienpham/Documents/Git/tintech/scss/_base.scss */
+h1 {
+  font-size: 4.4rem;
+}
+
+/* line 34, /Users/tienpham/Documents/Git/tintech/scss/_base.scss */
+h2 {
+  font-size: 2.4rem;
+}
+
+/* line 35, /Users/tienpham/Documents/Git/tintech/scss/_base.scss */
+h3 {
+  font-size: 1.5rem;
+}
+
+/* line 36, /Users/tienpham/Documents/Git/tintech/scss/_base.scss */
+h4 {
+  font-size: 1.3rem;
+}
+
+/* line 37, /Users/tienpham/Documents/Git/tintech/scss/_base.scss */
+h5 {
+  font-size: 1.2em;
+}
+
+/* line 38, /Users/tienpham/Documents/Git/tintech/scss/_base.scss */
+h6 {
+  font-size: 1rem;
+}
+
+/* line 40, /Users/tienpham/Documents/Git/tintech/scss/_base.scss */
+h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: .8em;
+}
+
+/* Anchors */
+/* line 47, /Users/tienpham/Documents/Git/tintech/scss/_base.scss */
+a {
+  outline: 0;
+  color: inherit;
+}
+
+/* line 48, /Users/tienpham/Documents/Git/tintech/scss/_base.scss */
+a img {
+  border: 0px;
+  text-decoration: none;
+}
+
+/* line 55, /Users/tienpham/Documents/Git/tintech/scss/_base.scss */
+img {
+  max-width: 100%;
+}
+
+/* Paragraphs */
+/* line 60, /Users/tienpham/Documents/Git/tintech/scss/_base.scss */
+p {
+  margin-bottom: 1.143em;
+}
+
+/* line 61, /Users/tienpham/Documents/Git/tintech/scss/_base.scss */
+* p:last-child {
+  margin-bottom: 0;
+}
+
+/* line 63, /Users/tienpham/Documents/Git/tintech/scss/_base.scss */
+strong, b {
+  font-weight: bold;
+}
+
+/* line 64, /Users/tienpham/Documents/Git/tintech/scss/_base.scss */
+em, i {
+  font-style: italic;
+}
+
+/* line 66, /Users/tienpham/Documents/Git/tintech/scss/_base.scss */
+::-moz-selection {
+  background: #FE3B53;
+  color: #fff;
+}
+
+/* line 67, /Users/tienpham/Documents/Git/tintech/scss/_base.scss */
+::selection {
+  background: #FE3B53;
+  color: #fff;
+}
+
+/* Lists */
+/* line 70, /Users/tienpham/Documents/Git/tintech/scss/_base.scss */
+ul {
+  list-style: outside disc;
+  margin: 1em 0 1.5em 1.5em;
+}
+
+/* line 75, /Users/tienpham/Documents/Git/tintech/scss/_base.scss */
+ol {
+  list-style: outside decimal;
+  margin: 1em 0 1.5em 1.5em;
+}
+
+/* line 80, /Users/tienpham/Documents/Git/tintech/scss/_base.scss */
+dl {
+  margin: 0 0 1.5em 0;
+}
+
+/* line 81, /Users/tienpham/Documents/Git/tintech/scss/_base.scss */
+dt {
+  font-weight: bold;
+}
+
+/* line 82, /Users/tienpham/Documents/Git/tintech/scss/_base.scss */
+dd {
+  margin-left: 1.5em;
+}
+
+/* Quotes */
+/* line 85, /Users/tienpham/Documents/Git/tintech/scss/_base.scss */
+blockquote {
+  font-style: italic;
+}
+
+/* Tables */
+/* line 91, /Users/tienpham/Documents/Git/tintech/scss/_base.scss */
+table {
+  margin: .5em auto 1.5em auto;
+  width: 98%;
+}
+
+/* Thead */
+/* line 94, /Users/tienpham/Documents/Git/tintech/scss/_base.scss */
+thead th {
+  padding: .5em .4em;
+  text-align: left;
+}
+
+/* Tbody */
+/* line 98, /Users/tienpham/Documents/Git/tintech/scss/_base.scss */
+tbody td {
+  padding: .5em .4em;
+}
+
+/* Tfoot */
+/* line 1, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 1.7px;
+}
+
+/* line 7, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+button,
+.button {
+  border: #FFC72A solid 1px;
+  background-color: #FFC72A;
+  color: #384857;
+  font-size: 1.6rem;
+  font-weight: 600;
+  height: 44px;
+  line-height: 44px;
+  padding: 0 2.3rem;
+  display: inline-block;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/* line 22, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+button:hover,
+.button:hover {
+  background-color: #ffd766;
+}
+
+/* line 27, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.button-outline {
+  border: #384857 solid 1px;
+  color: #384857;
+  height: 44px;
+  line-height: 44px;
+  padding: 0 2.3rem;
+  display: inline-block;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* line 36, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.button-outline.is-big {
+  border-width: 2px;
+  font-size: 1.8rem;
+  line-height: 64px;
+  height: 64px;
+  letter-spacing: 1.7px;
+  padding: 0 4.4rem;
+  font-weight: 700;
+}
+
+/* line 45, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.button-outline.is-small {
+  height: 32px;
+  line-height: 32px;
+  border-radius: 5px;
+  letter-spacing: 1.3px;
+}
+
+/* line 51, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.button-outline:hover {
+  color: #fff;
+  background-color: #384857;
+}
+
+/* line 57, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.grid {
+  max-width: 1000px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 65, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.header {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 96px;
+  padding: 2rem 7.2rem;
+  background-color: #151515;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+/* line 80, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.header .logo {
+  display: block;
+}
+
+/* line 82, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.header .logo .is-small {
+  display: none;
+}
+
+/* line 86, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.header .menu {
+  display: block;
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+/* line 90, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.header .menu .button {
+  color: #151515;
+}
+
+/* line 92, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.header .menu .button img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.9rem;
+}
+
+/* line 98, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.header .menu > li {
+  display: inline-block;
+}
+
+/* line 100, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.header .menu > li.current {
+  color: #FFC72A;
+}
+
+/* line 103, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.header .menu > li + li {
+  margin-left: 4.4rem;
+}
+
+/* line 106, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.header .menu > li a {
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+/* line 114, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.fixed-banner {
+  height: 746px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+/* line 126, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+section {
+  background-color: #fff;
+  z-index: 2;
+  position: relative;
+}
+
+/* line 132, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 136, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#about {
+  margin-top: 746px;
+  padding-top: 12.3rem;
+  padding-bottom: 12.3rem;
+}
+
+/* line 140, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#about h1 {
+  max-width: 555px;
+  margin-bottom: 3.7rem;
+  color: #151515;
+}
+
+/* line 148, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#services .cover-img {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  will-change: transform;
+  height: 459px;
+}
+
+/* line 160, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#services > * {
+  z-index: 2;
+  position: relative;
+}
+
+/* line 165, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#services .group-of {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 17.6rem;
+  align-items: flex-start;
+}
+
+/* line 172, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#services .group-of .services-box {
+  padding-top: 7.9rem;
+  padding-left: 5.3rem;
+  padding-bottom: 8.5rem;
+  position: relative;
+}
+
+/* line 177, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#services .group-of .services-box h2 {
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+/* line 181, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#services .group-of .services-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+/* line 187, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#services .group-of .services-box ul li {
+  margin-bottom: 1.1rem;
+}
+
+/* line 191, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#services .group-of .services-box > img {
+  position: absolute;
+}
+
+/* line 194, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#services .group-of .services-box.is-red {
+  background-color: #FE3B53;
+  width: 459px;
+  margin-top: 10.6rem;
+  color: #33383C;
+}
+
+/* line 198, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#services .group-of .services-box.is-red > img {
+  right: 20px;
+  bottom: -40px;
+}
+
+/* line 202, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#services .group-of .services-box.is-red h2 {
+  color: #292F35;
+}
+
+/* line 207, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#services .group-of .services-box.is-blue {
+  color: #fff;
+  background-color: #15B2FF;
+  width: 324px;
+}
+
+/* line 211, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#services .group-of .services-box.is-blue > img {
+  right: 45px;
+  bottom: -30px;
+}
+
+/* line 220, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.list-of-services {
+  margin: 0 auto;
+  padding-top: 10rem;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* line 227, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.list-of-services li {
+  width: 12%;
+  text-align: center;
+}
+
+/* line 230, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.list-of-services li img {
+  display: inline-block;
+  margin-bottom: 1.4rem;
+}
+
+/* line 237, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.cta {
+  margin: 0 auto;
+  max-width: 557px;
+  padding: 8.2rem 0 13.9rem;
+  text-align: center;
+}
+
+/* line 242, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.cta h2 {
+  font-size: 3.7rem;
+  color: #151515;
+}
+
+/* line 246, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.cta .button-outline {
+  margin-top: 3.6rem;
+}
+
+/* line 251, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#careers {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* line 255, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#careers .jobs, #careers .benefits {
+  width: 50%;
+  padding-top: 9.5rem;
+  padding-bottom: 9.5rem;
+}
+
+/* line 259, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#careers .jobs h2, #careers .benefits h2 {
+  font-size: 3.7rem;
+}
+
+/* line 263, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#careers .jobs {
+  background-color: #f2f2f2;
+  padding-left: 8rem;
+  padding-right: 8%;
+}
+
+/* line 267, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#careers .jobs h2 {
+  color: #151515;
+  margin-bottom: 2.8rem;
+}
+
+/* line 271, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#careers .jobs h3 {
+  margin-bottom: 3rem;
+  color: #292F35;
+  font-size: 2.1rem;
+}
+
+/* line 277, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#careers .list-of-jobs {
+  margin-top: 9rem;
+}
+
+/* line 279, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#careers .list-of-jobs ul {
+  list-style: none;
+  margin: 0;
+}
+
+/* line 282, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#careers .list-of-jobs ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 287, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#careers .list-of-jobs ul li + li {
+  margin-top: 4rem;
+}
+
+/* line 290, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#careers .list-of-jobs ul li p {
+  font-size: 1.4rem;
+  margin-bottom: 0;
+}
+
+/* line 294, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#careers .list-of-jobs ul li .button-outline {
+  margin: 0;
+}
+
+/* line 300, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#careers .benefits {
+  background-color: #004A79;
+  color: #fff;
+  padding-left: 8%;
+  padding-right: 8rem;
+}
+
+/* line 305, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#careers .benefits p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.4rem;
+  letter-spacing: 1.2px;
+}
+
+/* line 310, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#careers .benefits h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* line 315, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#careers .list-of-benefits {
+  list-style: none;
+  position: relative;
+  padding-left: 8rem;
+  margin: 0;
+  max-width: 390px;
+}
+
+/* line 321, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#careers .list-of-benefits li {
+  margin-top: 6rem;
+}
+
+/* line 324, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#careers .list-of-benefits .symbol {
+  position: absolute;
+  left: 0;
+}
+
+/* line 331, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#life-at-tintech {
+  width: 100%;
+}
+
+/* line 333, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#life-at-tintech img {
+  display: block;
+}
+
+/* line 338, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#contact {
+  background-color: #384857;
+  background-image: url(../images/footer-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  z-index: 4;
+  position: relative;
+  padding-top: 22.3rem;
+  padding-bottom: 18rem;
+}
+
+/* line 349, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#contact .grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* line 354, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#contact .grid .haft {
+  width: 50%;
+  position: relative;
+}
+
+/* line 357, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#contact .grid .haft:last-child {
+  padding-left: 8rem;
+}
+
+/* line 361, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#contact .grid .quote-mark {
+  color: #FFC72A;
+  font-family: serif;
+  font-size: 20rem;
+  font-family: Times, serif;
+  position: absolute;
+  left: 0;
+  top: -140px;
+}
+
+/* line 370, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#contact .grid h2 {
+  font-size: 4.4rem;
+}
+
+/* line 375, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+#contact h3 {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 2.4rem;
+  margin-top: 2rem;
+}
+
+/* line 383, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.contact-links {
+  margin-top: 6.6rem;
+}
+
+/* line 385, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.contact-links p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/* line 389, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.contact-links a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 392, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.contact-links a.is-strong-url {
+  color: #FFC72A;
+  text-decoration: underline;
+}
+
+/* line 395, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.contact-links a.is-strong-url:hover {
+  color: #feca3b;
+}
+
+/* line 400, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.contact-links .social-icons {
+  list-style: none;
+  margin: 0 0 2.4rem;
+  padding: 0;
+}
+
+/* line 404, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.contact-links .social-icons li {
+  display: inline-block;
+  margin-right: 4rem;
+}
+
+/* line 411, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.contact-form {
+  display: block;
+}
+
+/* line 413, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.contact-form textarea {
+  height: 110px;
+  resize: none;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+/* line 417, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.contact-form textarea::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* line 422, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.contact-form textarea::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* line 427, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.contact-form textarea::-webkit-scrollbar-thumb {
+  background: #6E799A;
+  border-radius: 1.5px;
+}
+
+/* line 437, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.contact-form .button {
+  margin-top: 3.5rem;
+}
+
+/* line 442, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.input-text {
+  width: 100%;
+  display: block;
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  outline: none;
+  border-bottom: #fff solid 2px;
+  font-size: 1.4rem;
+  padding: 1.2rem 0;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+/* line 455, /Users/tienpham/Documents/Git/tintech/scss/_layout.scss */
+.input-text::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #6e799a;
+  opacity: 1;
+  /* Firefox */
+}
+
+@media all and (max-width: 1000px) {
+  /* line 6, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  .header {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  /* line 9, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  .header .logo .is-normal {
+    width: 100px;
+  }
+  /* line 12, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  .header .button {
+    font-size: 1.4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  /* line 17, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  .header .menu {
+    font-size: 1.4rem;
+  }
+  /* line 20, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  .header .menu li + li {
+    margin-left: 2rem;
+  }
+  /* line 28, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  #services .group-of .services-box.is-red {
+    width: 400px;
+  }
+  /* line 33, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  #careers .jobs {
+    padding-left: 2rem;
+  }
+  /* line 35, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  #careers .jobs .button-outline.is-small {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.2rem;
+  }
+  /* line 41, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  #careers .benefits {
+    padding-right: 2rem;
+  }
+}
+
+@media all and (max-width: 800px) {
+  /* line 49, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  #services .group-of .services-box {
+    width: 100% !important;
+  }
+  /* line 52, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  #services .group-of .services-box.is-red > img {
+    bottom: 30px;
+    right: 15%;
+  }
+  /* line 57, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  #services .group-of .services-box.is-blue {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 5.3rem;
+  }
+  /* line 62, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  #services .group-of .services-box.is-blue h2, #services .group-of .services-box.is-blue ul {
+    width: 45%;
+  }
+  /* line 65, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  #services .group-of .services-box.is-blue > img {
+    bottom: 40px;
+    left: 15%;
+  }
+  /* line 71, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  .list-of-services {
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  /* line 74, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  .list-of-services li {
+    width: 33.333%;
+    margin-bottom: 3rem;
+  }
+  /* line 77, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  .list-of-services li h3 {
+    font-size: 1.4rem;
+  }
+  /* line 83, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  #careers .jobs h2, #careers .benefits h2 {
+    font-size: 3rem;
+  }
+  /* line 88, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  #contact .grid h2 {
+    font-size: 4rem;
+  }
+  /* line 91, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  .cta {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media all and (max-width: 550px) {
+  /* line 98, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  .fixed-banner {
+    height: 100vh;
+  }
+  /* line 101, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  p {
+    font-size: 1.6rem;
+  }
+  /* line 104, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  .header {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  /* line 107, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  .header .logo {
+    width: 217px;
+  }
+  /* line 109, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  .header .logo .is-small {
+    display: block;
+    width: 100%;
+  }
+  /* line 113, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  .header .logo .is-normal {
+    display: none;
+  }
+  /* line 118, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  .header .menu li {
+    font-size: 1.3rem;
+    letter-spacing: .5px;
+  }
+  /* line 121, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  .header .menu li + li {
+    margin-left: 1.2rem;
+  }
+  /* line 125, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  .header .menu .button {
+    padding: 0;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    height: auto;
+    font-size: 1.2rem;
+  }
+  /* line 132, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  .header .menu .button img {
+    display: none;
+  }
+  /* line 139, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  #about h1 {
+    font-size: 3.4rem;
+    max-width: 320px;
+  }
+  /* line 144, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  #services .group-of .services-box.is-red img {
+    right: 10px;
+  }
+  /* line 147, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  #services .group-of .services-box.is-blue {
+    text-align: right;
+  }
+  /* line 149, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  #services .group-of .services-box.is-blue h2, #services .group-of .services-box.is-blue ul {
+    width: 60%;
+  }
+  /* line 152, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  #services .group-of .services-box.is-blue img {
+    left: 10px;
+  }
+  /* line 156, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  #services .group-of .services-box > img {
+    width: 30%;
+  }
+  /* line 161, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  #careers .jobs, #careers .benefits {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  /* line 167, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  #contact {
+    padding-bottom: 10rem;
+  }
+  /* line 169, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  #contact .grid .haft {
+    width: 100%;
+  }
+  /* line 171, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  #contact .grid .haft:last-child {
+    padding-left: 0;
+    padding-top: 5rem;
+  }
+}
+
+@media all and (max-width: 320px) {
+  /* line 180, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  .header .menu li {
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+  }
+  /* line 183, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  .header .menu li .button {
+    font-size: 1.1rem;
+  }
+  /* line 186, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  .header .menu li + li {
+    margin-left: 0.7rem;
+  }
+  /* line 190, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  .button-outline.is-big {
+    padding: 0 2rem;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.6rem;
+  }
+  /* line 197, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  #services .group-of .services-box {
+    padding-bottom: 6rem !important;
+  }
+  /* line 199, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  #services .group-of .services-box img {
+    width: 25% !important;
+  }
+  /* line 202, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  #services .group-of .services-box.is-red {
+    padding-left: 3rem;
+  }
+  /* line 204, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  #services .group-of .services-box.is-red h2, #services .group-of .services-box.is-red ul {
+    width: 70%;
+  }
+  /* line 208, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  #services .group-of .services-box.is-blue {
+    padding-right: 3rem;
+  }
+  /* line 210, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  #services .group-of .services-box.is-blue h2, #services .group-of .services-box.is-blue ul {
+    width: 70%;
+  }
+  /* line 215, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  .list-of-services li {
+    width: 50%;
+  }
+  /* line 218, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  .cta h2 {
+    font-size: 3rem;
+  }
+  /* line 221, /Users/tienpham/Documents/Git/tintech/scss/_responsive.scss */
+  #contact .grid h2 {
+    font-size: 3.2rem;
+  }
+}
+
+/*# sourceMappingURL=../css/main.map */

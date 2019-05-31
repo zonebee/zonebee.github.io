@@ -1,0 +1,224 @@
+@media all and (max-width: 1280px) {
+
+}
+
+@media all and (max-width: 1000px) {
+	.header {
+		padding-left: 2rem;
+		padding-right: 2rem;
+		.logo .is-normal {
+			width: 100px;
+		}
+		.button {
+			font-size: 1.4rem;
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
+		.menu {
+			font-size: 1.4rem;
+			li {
+				+ li {
+					margin-left: 2rem;
+				}
+			}
+		}
+	}
+
+	#services .group-of .services-box {
+		&.is-red {
+			width: 400px;
+		}
+	}
+	#careers {
+		.jobs {
+			padding-left: 2rem;
+			.button-outline.is-small {
+				padding-left: 1rem;
+				padding-right: 1rem;
+				font-size: 1.2rem;
+			}
+		}
+		.benefits {
+			padding-right: 2rem;
+		}
+	}
+}
+
+@media all and (max-width: 800px) {
+	
+	#services .group-of .services-box {
+		width: 100%!important;
+		&.is-red {
+			> img {
+				bottom: 30px;
+				right: 15%;
+			}
+		}
+		&.is-blue {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			padding-right: 5.3rem;
+			h2, ul {
+				width: 45%;
+			}
+			> img {
+				bottom: 40px;
+				left: 15%;
+			}
+		}
+	}
+	.list-of-services {
+		flex-wrap: wrap;
+		justify-content: left;
+		li {
+			width: 33.333%;
+			margin-bottom: 3rem;
+			h3 {
+				font-size: 1.4rem;
+			}
+		}
+	}
+	#careers {
+		.jobs h2, .benefits h2 {
+			font-size: 3rem;
+		}
+	}
+
+	#contact .grid h2 {
+		font-size: 4rem;
+	}
+	.cta {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+}
+
+@media all and (max-width: 550px) {
+	.fixed-banner {
+		height: 100vh;
+	}
+	p {
+		font-size: 1.6rem;
+	}
+	.header {
+		padding-left: 2rem;
+		padding-right: 2rem;
+		.logo {
+			width: 217px;
+			.is-small {
+				display: block;
+				width: 100%;
+			}
+			.is-normal {
+				display: none;
+			}
+		}
+		.menu {
+			li {
+				font-size: 1.3rem;
+				letter-spacing: .5px;
+				+ li {
+					margin-left: 1.2rem;
+				}
+			}
+			.button {
+				padding: 0;
+				background-color: transparent;
+				color: #fff;
+				border: none;
+				height: auto;
+				font-size: 1.2rem;
+				img {
+					display: none;
+				}
+			}
+		}
+	}
+
+	#about h1 {
+		font-size: 3.4rem;
+		max-width: 320px;
+	}
+	#services .group-of .services-box {
+		&.is-red img {
+			right: 10px;
+		}
+		&.is-blue {
+			text-align: right;
+			h2, ul {
+				width: 60%;
+			}
+			img {
+				left: 10px;
+			}
+		}
+		> img {
+			width: 30%;
+		}
+	}
+	#careers {
+		.jobs, .benefits {
+			width: 100%;
+			padding-left: 2rem;
+			padding-right: 2rem;
+		}
+	}
+	#contact {
+		padding-bottom: 10rem;
+		.grid .haft {
+			width: 100%;
+			&:last-child {
+				padding-left: 0;
+				padding-top: 5rem;
+			}
+		}
+	}
+}
+
+@media all and (max-width: 320px) {
+	.header .menu li {
+		font-size: 1.1rem;
+		letter-spacing: 0.5px;
+		.button {
+			font-size: 1.1rem;
+		}
+		+ li {
+			margin-left: 0.7rem;
+		}
+	}
+	.button-outline.is-big {
+		padding: 0 2rem;
+		height: 50px;
+		line-height: 50px;
+		font-size: 1.6rem;
+	}
+
+	#services .group-of .services-box {
+		padding-bottom: 6rem!important;
+		img {
+			width: 25%!important;
+		}
+		&.is-red {
+			padding-left: 3rem;
+			h2, ul {
+				width: 70%;
+			}
+		}
+		&.is-blue {
+			padding-right: 3rem;
+			h2, ul {
+				width: 70%;
+			}
+		}
+	}
+	.list-of-services li {
+		width: 50%;
+	}
+	.cta h2 {
+		font-size: 3rem;
+	}
+	#contact .grid h2 {
+		font-size: 3.2rem;
+	}
+}

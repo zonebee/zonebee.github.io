@@ -1,0 +1,106 @@
+
+/*
+  Name: TINTECH Company
+  Date: May 2019
+  description: >-
+  A cool website of a cool company.
+  Version: 1.0
+  Author: tien pham
+  Autor URI: https://tienpham.me
+*/
+
+
+/* Body */
+html {
+  font-size: 62.5%; }
+
+body {
+  color: $base-color;
+  font-size: 1.4em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  font-family: $font-body;
+  line-height: 1.25;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+* { box-sizing: border-box; }
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-headline;
+}
+h1 {font-size: 4.4rem}
+h2 {font-size: 2.4rem}
+h3 {font-size: 1.5rem}
+h4 {font-size: 1.3rem}
+h5 {font-size: 1.2em}
+h6 {font-size: 1rem}
+
+h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: .8em;
+}
+
+/* Anchors */
+a {outline: 0; color: inherit;}
+a img {border: 0px; text-decoration: none;}
+a:link, a:visited {
+  // color: inherit;
+}
+a:hover, a:active {
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Paragraphs */
+p {margin-bottom: 1.143em;}
+* p:last-child {margin-bottom: 0;}
+
+strong, b {font-weight: bold;}
+em, i {font-style: italic;}
+
+::-moz-selection {background: $red; color: #fff;}
+::selection {background: $red; color: #fff;}
+
+/* Lists */
+ul {
+  list-style: outside disc;
+  margin: 1em 0 1.5em 1.5em;
+}
+
+ol {
+  list-style: outside decimal;
+  margin: 1em 0 1.5em 1.5em;
+}
+
+dl {margin: 0 0 1.5em 0;}
+dt {font-weight: bold;}
+dd {margin-left: 1.5em;}
+
+/* Quotes */
+blockquote {font-style: italic;}
+cite {}
+
+q {}
+
+/* Tables */
+table {margin: .5em auto 1.5em auto; width: 98%;}
+
+  /* Thead */
+  thead th {padding: .5em .4em; text-align: left;}
+  thead td {}
+
+  /* Tbody */
+  tbody td {padding: .5em .4em;}
+  tbody th {}
+
+  tbody .alt td {}
+  tbody .alt th {}
+
+  /* Tfoot */
+  tfoot th {}
+  tfoot td {}
